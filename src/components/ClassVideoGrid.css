@@ -1,0 +1,28 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
+  gap: 20px; /* 비디오 간격 */
+  padding: 20px;
+  max-width: 900px; /* 전체 그리드 너비 제한 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  max-width: 250px; /* 비디오 크기 조절 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-title {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
