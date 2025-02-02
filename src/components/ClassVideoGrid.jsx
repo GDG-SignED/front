@@ -1,5 +1,5 @@
 import React from "react";
-import "./VideoGrid.css"; 
+import "./ClassVideoGrid.css"; 
 
 const VideoGrid = ({ videos }) => {
   return (
