@@ -1,10 +1,18 @@
 import '../css/HomePage.css';
+import Nav from '../components/Nav';
+import Intro from '../components/Intro';
+import InfSection from '../components/infSection';
+import SlideBanner from '../components/SlideBanner';
+import Footer from '../components/Footer';
 
 function HomePage() {
 
   return (
     <div>
-        <h1>HomePage</h1>
+      <Nav />
+      <Intro />
+      <InfSection />
+      <Footer />
     </div>
   )
 }
