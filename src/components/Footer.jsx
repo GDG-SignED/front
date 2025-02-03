@@ -1,4 +1,4 @@
-import '../css/Footer.css';
+import './css/Footer.css';
 import notion from '../assets/images/notion_icon.png';
 import github from '../assets/images/github_icon.png';
 

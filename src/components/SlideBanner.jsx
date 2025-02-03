@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
-import "../css/SlideBanner.css";
+import "./css/SlideBanner.css";
 
 function SlideBanner() {
   return (

@@ -1,4 +1,4 @@
-import '../css/ClassMainPage.css';
+import './css/ClassMainPage.css';
 import VideoGrid from '../components/ClassVideoGrid';
 import videoLinksConsonants from "../assets/ClassVideoData/ClassConsonants";
 

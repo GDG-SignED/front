@@ -1,4 +1,4 @@
-import '../css/HomePage.css';
+import './css/HomePage.css';
 import Intro from '../components/Intro';
 import InfSection from '../components/infSection';
 

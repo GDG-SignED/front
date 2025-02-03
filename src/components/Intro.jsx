@@ -1,4 +1,4 @@
-import '../css/Intro.css';
+import './css/Intro.css';
 import background from '../assets/images/introImage.jpg';
 
 function Intro(){

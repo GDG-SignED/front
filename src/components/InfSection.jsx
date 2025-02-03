@@ -1,4 +1,4 @@
-import '../css/InfSection.css';
+import './css/InfSection.css';
 
 function InfSection(){
     return(
