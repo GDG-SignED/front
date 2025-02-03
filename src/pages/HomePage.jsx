@@ -7,9 +7,11 @@ import Footer from '../components/Footer';
 function HomePage() {
 
   return (
-    <div>
+    <div className='home-wrapper'>
+      <div className='home-body'> 
       <Intro />
       <InfSection />
+      </div>
     </div>
   )
 }
