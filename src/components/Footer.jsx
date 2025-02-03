@@ -8,7 +8,6 @@ function Footer(){
             <h3>GDG Success Team4</h3>
             <a href="https://www.notion.so/SucceSS-4-175dd6a3a8f38096a916e2fe53720d39?pvs=4" target="_blank"><img src={notion} alt="notion" /></a>
             <a href="https://github.com/GDG-SignED" target="_blank"><img src={github} alt="github" /></a>
-            
         </div>
     )
 }

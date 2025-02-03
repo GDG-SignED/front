@@ -1,5 +1,4 @@
 import '../css/HomePage.css';
-import Nav from '../components/Nav';
 import Intro from '../components/Intro';
 import InfSection from '../components/infSection';
 import SlideBanner from '../components/SlideBanner';
@@ -9,10 +8,8 @@ function HomePage() {
 
   return (
     <div>
-      <Nav />
       <Intro />
       <InfSection />
-      <Footer />
     </div>
   )
 }
