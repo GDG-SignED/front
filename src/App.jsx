@@ -11,7 +11,7 @@ function App() {
       <div className='App-wrapper'>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="class-main-page" element={<ClassMainPage />} />
+          <Route path="/class-main-page" element={<ClassMainPage />} />
         </Routes>
       </div>
     </BrowserRouter>

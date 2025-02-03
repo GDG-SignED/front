@@ -1,0 +1,20 @@
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbarMenu {
+    font-family: 'IBM-Plex-Sans-KR';
+    font-weight: 500;
+    font-size: 20px;
+    color: #3D3D3D;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 0 20px;
+  }
