@@ -1,0 +1,88 @@
+/* 전체 레이아웃 */
+.class-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 사이드바 */
+.class-sidebar {
+  width: 20%;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #e3e3e3;
+}
+
+/* 메인 콘텐츠 */
+.class-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* 로그인 버튼 */
+.class-login-button {
+  background-color: #2f855a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background-color: #276749;
+}
+
+/* 아래 콘텐츠 */
+.class-content-section {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* VideoGrid 스타일 */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.video-grid video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* .classLoginButton {
+  position: absolute;
+  width: 277px;
+  height: 67.76px;
+  left: 358px;
+  top: 572px;
+
+  background: #578E7E;
+  border-radius: 26px;
+} */
