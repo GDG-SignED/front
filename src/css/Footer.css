@@ -1,9 +1,30 @@
-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+.footer-container {
+    display: flex;
+    flex-direction: column;       
+    padding: 20px 0 20px 50px;
+    border-top: 2px solid black;
+    width: 100%;
+    
 }
 
-.footer-container{
-    padding: 0 100px;
+.icon-container {
+    display: flex;               
+    gap: 20px;                    
+    margin-top: 10px;             
+}
+
+.notion-icon, .github-icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.notion-icon {
+    background-image: url('../assets/images/notion_icon.png');
+}
+
+.github-icon {
+    background-image: url('../assets/images/github_icon.png');
 }

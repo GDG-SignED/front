@@ -7,7 +7,7 @@ function InfSection(){
             <h1 className="title">  영상 학습과<br />
                 AI 모션 인식 학습
             </h1>
-            <img src={infoimg} alt='infImage' />
+            <img className="infImg" src={infoimg} alt='infImage' />
         </div>
     )
 }

@@ -1,9 +1,11 @@
 .intro-container {
+    background-image: url('../assets/images/introImage.jpg');
     width: 100%;
     height: 400px;
-    color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
     font-family: 'IBM-Plex-Sans-KR';
-    transform: translateX(200px) translateY(100px);
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 .loginButton {
@@ -17,4 +19,8 @@
     cursor: pointer;
     transition: all 0.3s; 
     transform: translateY(10px)
+}
+
+.introText{
+    transform: translateX(150px) translateY(100px)
 }
