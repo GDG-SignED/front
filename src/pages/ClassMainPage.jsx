@@ -20,15 +20,15 @@ function ClassMainPage() {
     <div>
       <div className="class-container">
         {/* 상단부 */}
-        <header className="header">
-          <div className="left-section">
+        <header className="class-header">
+          <div className="class-left-section">
             <h2>로그인 후에 같이 공부해보아요!</h2>
-            <button className="login-button">로그인/회원가입 →</button>
+            <button className="class-login-button">로그인/회원가입 →</button>
           </div>
-          <div className="right-section">
+          <div className="class-right-section">
             {categories.map((category) => (
               <button 
-                className="category-button"
+                className="class-category-button"
                 key={category.key}
                 onClick={() => setSelectedCategory(category)}
               >
@@ -39,7 +39,7 @@ function ClassMainPage() {
         </header>
 
         {/* 하단부 */}
-        <main className="content">
+        <main className="class-content">
           {selectedCategory ? (
             <VideoGrid videos={selectedCategory.videos} />
           ) : (
