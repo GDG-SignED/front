@@ -7,7 +7,7 @@ function Nav() {
     <div>
       <div className='navbar'>
         <Link className='logo' to={'/'}>  
-          <img src={Logo} alt='Logo' />
+          <img src={Logo} alt='Logo' className='logo-img' />
         </Link>
         <Link className='navbarMenu' to={'/'}>홈</Link>
         <Link className='navbarMenu' to={'/class-main-page'}>클래스</Link>
