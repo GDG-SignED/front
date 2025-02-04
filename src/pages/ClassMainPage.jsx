@@ -19,42 +19,38 @@ function ClassMainPage() {
   return (
     <div>
       <div className="class-container">
-        {/* 왼쪽 고정 사이드바 */}
-        <div className="class-sidebar">
-          {categories.map((category) => (
-            <button
-              key={category.key}
-              onClick={() => setSelectedCategory(category)}
-            >
-              {category.name}
-            </button>
-          ))}
-        </div>
+        {/* 상단부 */}
+        <header className="header">
+          <div className="left-section">
+            <h2>로그인 후에 같이 공부해보아요!</h2>
+            <button className="login-button">로그인/회원가입 →</button>
+          </div>
+          <div className="right-section">
+            {categories.map((category) => (
+              <button 
+                className="category-button"
+                key={category.key}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
+        </header>
 
-        {/* 메인 컨텐츠 영역 */}
-        <div className="class-main-content">
-          <h1 className="text-2xl font-bold mb-4">로그인 후에 같이 공부해보아요!</h1>
-          <button className="class-login-button">
-            로그인/회원가입 →
-          </button>
-
-          {/* 선택한 카테고리에 따른 콘텐츠 변경 */}
-          <div className="class-content-section">
-            {selectedCategory ? (
-              selectedCategory.videos.length > 0 ? (
-                <VideoGrid videos={selectedCategory.videos} />
-              ) : (
-                <p className="text-center text-gray-500">
-                  해당 카테고리의 영상이 없습니다.
-                </p>
-              )
-              ) : (
-                <p className="text-center text-gray-600">
-                  수어를 배우는 첫 걸음, 영상을 통해 손끝의 언어를 만나보세요!
-                </p>
-              )}
+        {/* 하단부 */}
+        <main className="content">
+          {selectedCategory ? (
+            <VideoGrid videos={selectedCategory.videos} />
+          ) : (
+            <div className="default-text">
+              <p>수어를 배우는 첫 걸음,</p>
+              <p>영상을 통해 손끝의 언어를 만나보세요!</p>
+              <p>더 많은 사람들과 소통할 수 있는 특별한 능력을 키워보세요.</p>
+              <p>오른쪽에 있는 카테고리 중 원하는 것을 골라 공부해보아요. ✏️</p>
             </div>
-        </div>
+          )}
+        </main>
       </div>
     </div>
   )
