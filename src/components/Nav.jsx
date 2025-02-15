@@ -11,8 +11,8 @@ function Nav() {
         </Link>
         <Link className='navbarMenu' to={'/'}>홈</Link>
         <Link className='navbarMenu' to={'/class-main-page'}>클래스</Link>
-        <Link className='navbarMenu' to={'/'}>커뮤니티</Link>
-        <Link className='navbarMenu' to={'/'}>테스트</Link>
+        {/* <Link className='navbarMenu' to={'/'}>커뮤니티</Link> */}
+        <Link className='navbarMenu' to={'/test-main-page'}>테스트</Link>
         <Link className='navbarMenu' to={'/'}>유료서비스</Link>
       </div>
     </div>
