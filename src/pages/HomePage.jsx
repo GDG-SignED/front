@@ -1,10 +1,15 @@
-import '../css/HomePage.css';
+import './css/HomePage.css';
+import Intro from '../components/Intro';
+import InfSection from '../components/infSection';
 
 function HomePage() {
 
   return (
-    <div>
-        <h1>HomePage</h1>
+    <div className='home-wrapper'>
+      <div className='home-body'> 
+      <Intro />
+      <InfSection />
+      </div>
     </div>
   )
 }

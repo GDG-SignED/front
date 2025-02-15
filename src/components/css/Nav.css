@@ -1,0 +1,28 @@
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    /* object-fit: scale-down; */
+  }
+
+  .logo-img {
+    width: 100%;
+    margin: 0%;
+    object-fit: scale-down;
+  }
+  
+  .navbarMenu {
+    font-family: 'IBM-Plex-Sans-KR';
+    font-weight: bold;
+    font-size: 20px;
+    color: #3D3D3D;
+    text-decoration: none;
+    justify-content: center;
+  }
