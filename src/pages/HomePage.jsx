@@ -8,7 +8,7 @@ function HomePage() {
     <div className='home-wrapper'>
       <div className='home-body'> 
       <Intro />
-      <InfSection />
+      {/* <InfSection /> */}
       </div>
     </div>
   )

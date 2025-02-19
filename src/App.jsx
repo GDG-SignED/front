@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import HomePage from './pages/HomePage';
 import ClassMainPage from './pages/ClassMainPage';
 import TestMainPage from './pages/TestMainPage';
+import LoginPage from './pages/LoginPage';
 import Footer from './components/Footer';
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/class-main-page" element={<ClassMainPage />} />
           <Route path="/test-main-page" element={<TestMainPage />} />
+          <Route path="/login-page" element={<LoginPage />} />
         </Routes>
         <Footer />
       </div>

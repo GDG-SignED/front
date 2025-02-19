@@ -1,0 +1,61 @@
+
+.login-container {
+  text-align: center;
+  justify-content: center;
+  margin-top: 10%;
+  height: 700px;
+  font-family: 'IBM-Plex-Sans-KR';
+}
+
+.login-title {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.login-subtext {
+  margin: 10px 0;
+  color: gray;
+}
+
+hr {
+  width: 30%;
+  height: 1px;
+  border: 0;
+  background: rgb(192, 190, 190);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login-btn {
+  font-family: 'IBM-Plex-Sans-KR';
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 10px 15px;
+  width: 350px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 15px; 
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.kakao { background-color: white; }
+.naver { background-color: white; }
+.google { background-color: white; }
