@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ClassMainPage from './pages/ClassMainPage';
 import TestMainPage from './pages/TestMainPage';
 import LoginPage from './pages/LoginPage';
+import GoogleLogin from './auth/GoogleAuth';
 import Footer from './components/Footer';
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/class-main-page" element={<ClassMainPage />} />
           <Route path="/test-main-page" element={<TestMainPage />} />
           <Route path="/login-page" element={<LoginPage />} />
+          <Route path="/login-handler" element={<GoogleLogin />} />
         </Routes>
         <Footer />
       </div>

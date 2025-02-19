@@ -11,7 +11,7 @@ function ClassMainPage() {
   // 백 api 연결 테스트
   const [vidioLinkFromBack, setVidioLinkFromBack] = useState([]);
   const getUrl=()=>{
-    let videoUrl="http://localhost:8080/edu?category=CONSONANT";
+    let videoUrl="http://localhost:8080/edu";
 
     axios.get(videoUrl)
       .then(res=>{

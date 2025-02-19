@@ -5,6 +5,16 @@ import googleImg from '../assets/images/googleLogin.png';
 import React from "react";
 
 const LoginPage = () => {
+
+  const handleLogin = () => {
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?client_id=783019894517-fh7hjrq8tr980c05m6ellkjdtf9g93bg.apps.googleusercontent.com&redirect_uri=http://localhost:5173/login-handler&response_type=token&scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email`;
+    // "https://accounts.google.com/o/oauth2/v2/auth?" +
+    // "client_id=783019894517-fh7hjrq8tr980c05m6ellkjdtf9g93bg.apps.googleusercontent.com" +
+    // "&redirect_uri=http://localhost:5173/login-handler" +
+    // "&response_type=token" +
+    // "&scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
+  };
+
   return (
     <div className="login-container">
       <h2 className="login-title">로그인</h2>
@@ -20,7 +30,7 @@ const LoginPage = () => {
           네이버 로그인
         </button>
         <button className="login-btn google">
-          <img src={googleImg} alt="Google" className="btn-icon" />
+          <img src={googleImg} alt="Google" className="btn-icon" onClick={handleLogin}/>
           Google 로그인
         </button>
       </div>
