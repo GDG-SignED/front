@@ -3,10 +3,27 @@ import VideoGrid from '../components/ClassVideoGrid';
 import videoLinksConsonants from "../assets/ClassVideoData/ClassConsonants";
 import videoLinksVowels from "../assets/ClassVideoData/ClassVowels";
 import ClassPageContent from "../components/ClassPageContent";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 function ClassMainPage() {
+  // 백 api 연결 테스트
+  const [vidioLinkFromBack, setVidioLinkFromBack] = useState([]);
+  const getUrl=()=>{
+    let videoUrl="http://localhost:8080/edu?category=CONSONANT";
+
+    axios.get(videoUrl)
+      .then(res=>{
+        setVidioLinkFromBack(res.data);
+        console.log("링크 받아와지나 확인"+res.data);
+      })
+  }
+  useEffect(()=>{
+    console.log("getUrl: ");
+    getUrl();
+  },[]);
+
   // 사이드바 메뉴
   const [selectedCategory, setSelectedCategory] = useState(null);
   const categories = [
