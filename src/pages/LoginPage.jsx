@@ -7,12 +7,7 @@ import React from "react";
 const LoginPage = () => {
 
   const handleLogin = () => {
-    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?client_id=783019894517-fh7hjrq8tr980c05m6ellkjdtf9g93bg.apps.googleusercontent.com&redirect_uri=http://localhost:5173/login-handler&response_type=token&scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email`;
-    // "https://accounts.google.com/o/oauth2/v2/auth?" +
-    // "client_id=783019894517-fh7hjrq8tr980c05m6ellkjdtf9g93bg.apps.googleusercontent.com" +
-    // "&redirect_uri=http://localhost:5173/login-handler" +
-    // "&response_type=token" +
-    // "&scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?client_id=783019894517-fh7hjrq8tr980c05m6ellkjdtf9g93bg.apps.googleusercontent.com&redirect_uri=http://localhost:5173/login-handler&response_type=code&scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email`;
   };
 
   return (
