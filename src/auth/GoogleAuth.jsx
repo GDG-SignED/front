@@ -21,8 +21,8 @@ const GoogleAuth = () => {
           },
         }
       );
-      const jwt = res.data.jwt;
-      localStorage.setItem("bagtoken", jwt);
+      const accessToken = res.data.accessToken;
+      localStorage.setItem("bagtoken", accessToken);
       console.log("백에서 받는 데이터: ", res.data);
       // navigate("/");
       // window.location.reload();
