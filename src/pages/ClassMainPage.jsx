@@ -6,23 +6,36 @@ import ClassPageContent from "../components/ClassPageContent";
 import { useEffect, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import axios from "axios";
+import instance from '../auth/Axios';
 
 function ClassMainPage() {
   // 백 api 연결 테스트
   const [vidioLinkFromBack, setVidioLinkFromBack] = useState([]);
-  const getUrl=()=>{
-    let videoUrl="http://localhost:8080/edu";
+  // const getUrl=()=>{
+  //   instance.get('/edu')
+  //     .then(res=>{
+  //       setVidioLinkFromBack(res.data);
+  //       console.log("링크 받아와지나 확인"+res.data);
+  //     })
+  // }
+  // useEffect(()=>{
+  //   console.log("getUrl: ");
+  //   getUrl();
+  // },[]);
 
-    axios.get(videoUrl)
-      .then(res=>{
-        setVidioLinkFromBack(res.data);
-        console.log("링크 받아와지나 확인"+res.data);
-      })
-  }
-  useEffect(()=>{
-    console.log("getUrl: ");
+  useEffect(() => {
+    const getUrl = async () => {
+      try {
+        const response = await instance.get(`/edu?category=CONSONANT`);
+        console.log("데이터 받아와지나 확인", response.data);
+        setVidioLinkFromBack(response.data);
+      } catch (error) {
+        console.error('api 오류 발생:', error);
+      }
+    };
+
     getUrl();
-  },[]);
+}, []);
 
   // 사이드바 메뉴
   const [selectedCategory, setSelectedCategory] = useState(null);

@@ -21,10 +21,10 @@ const GoogleAuth = () => {
           },
         }
       );
-      const accessToken = res.data.accessToken;
-      localStorage.setItem("bagtoken", accessToken);
-      console.log("백에서 받는 데이터: ", res.data);
-      // navigate("/");
+      console.log("백에서 받는 토큰: ", res.data.accessToken);
+      localStorage.setItem("accessToken", res.data.accessToken);
+
+      navigate("/");
       // window.location.reload();
     } catch (error) {
       console.log(error);
