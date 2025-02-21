@@ -1,0 +1,14 @@
+.home-intro {
+  font-family: 'IBM-Plex-Sans-KR';
+  text-align: center;
+  padding: 40px 0;
+}
+
+.home-logo {
+  width: 290px;
+  height: 123px;
+}
+
+.home-subtitle {
+  color: gray;
+}

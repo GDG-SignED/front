@@ -1,5 +1,5 @@
 
-.home-body {
+/* .home-body {
   background: linear-gradient(135deg, #FFFAEC 0%, #A8CABA 50%, #578E7E 100%);
   background-attachment: fixed;
   background-size: cover;
@@ -7,10 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* 부드러운 텍스처 느낌 추가 (선택 사항) */
-.home-body::before {
+/* .home-body::before {
   content: "";
   position: absolute;
   top: 0;
@@ -21,4 +21,4 @@
   background-size: 100px 100px;
   opacity: 0.3;
   pointer-events: none;
-}
+} */

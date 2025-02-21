@@ -1,0 +1,15 @@
+.team-section {
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'IBM-Plex-Sans-KR';
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member img {
+  width: 50px;
+}
