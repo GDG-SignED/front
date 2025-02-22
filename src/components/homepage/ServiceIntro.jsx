@@ -4,10 +4,23 @@ import Img2 from '../../assets/images/homeServiceImg_2.png'
 import Img3 from '../../assets/images/homeServiceImg_3.png'
 import Img4 from '../../assets/images/homeServiceImg_4.png'
 
+
+import { useNavigate } from 'react-router-dom';
+
 const ServiceIntro = () => {
+  const navigate = useNavigate();
+  function gotoClass() {
+    navigate('/class-main-page');
+  }
+
   return (
     <section className="service-intro">
-      <h2>우리 손이랑 서비스는요</h2>
+      <hr/>
+
+      <div className="service-text">
+        우리 손이랑 서비스는요
+      </div>
+
       <div className="service-list">
         <div className="service-card">
           <img src={Img1} alt="학습" />
@@ -26,7 +39,8 @@ const ServiceIntro = () => {
           <p>AI 인식 모델 🤖</p>
         </div>
       </div>
-      <button className="service-button">학습하기 →</button>
+
+      <button className="service-button" onClick={gotoClass}>학습하기 →</button>
     </section>
   );
 };

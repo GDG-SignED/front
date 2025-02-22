@@ -1,7 +1,15 @@
 .service-intro {
   text-align: center;
+  position: relative;
+  height: 600px;
   padding: 40px 0;
   font-family: 'IBM-Plex-Sans-KR';
+}
+
+.service-text {
+  font-size: 35px;
+  color: #3D3D3D;
+  margin-bottom: 30px;
 }
 
 .service-list {
@@ -21,14 +29,20 @@
 }
 
 .service-card img {
-  width: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .service-button {
-  background: #4caf50;
+  margin-top: 20px;
+  font-family: 'IBM-Plex-Sans-KR';
+  font-size: 20px;
+  height: 50px;
+  width: 180px;
+  background-color: #578E7E;
   color: white;
+  padding: 8px 15px;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
