@@ -12,7 +12,7 @@ function Nav() {
         <Link className='navbarMenu' to={'/class-main-page'}>클래스</Link>
         {/* <Link className='navbarMenu' to={'/'}>커뮤니티</Link> */}
         <Link className='navbarMenu' to={'/test-main-page'}>테스트</Link>
-        <Link className='navbarMenu' to={'/'}>유료서비스</Link>
+        <Link className='navbarMenu' to={'/extra-page'}>유료서비스</Link>
         <Link className='navbarMenu' to={'/login-page'}>로그인/회원가입</Link>
 
       </div>

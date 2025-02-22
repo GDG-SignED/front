@@ -1,0 +1,26 @@
+
+.extra-section {
+  justify-content: center;
+  align-items: center;
+  font-family: 'IBM-Plex-Sans-KR';
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.extra-box {
+  background: #FFFAEC;
+  padding: 30px;
+  border-radius: 8px;
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.extra-text {
+  color: #3D3D3D;
+  font-size: 30px;
+  font-weight: bold;
+}
