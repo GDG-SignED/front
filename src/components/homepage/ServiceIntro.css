@@ -15,7 +15,7 @@
 .service-list {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 20px;
 }
 
@@ -23,22 +23,31 @@
   background: #f5f5f5;
   padding: 15px;
   border-radius: 8px;
-  width: 120px;
+  width: 180px;
+  height: 240px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .service-card img {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.service-card-text {
+  color: #3D3D3D;
+  font-size: 21px;
+  margin-top: 20px;
 }
 
 .service-button {
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'IBM-Plex-Sans-KR';
-  font-size: 20px;
-  height: 50px;
-  width: 180px;
+  font-size: 22px;
+  height: 70px;
+  width: 200px;
   background-color: #578E7E;
   color: white;
   padding: 8px 15px;

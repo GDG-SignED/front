@@ -22,19 +22,19 @@ const ServiceIntro = () => {
       <div className="service-list">
         <div className="service-card">
           <img src={Img1} alt="학습" />
-          <p>쉽고 재미있는 수어 학습</p>
+          <p className="service-card-text">쉽고 재미있는 수어 학습 🖐️</p>
         </div>
         <div className="service-card">
           <img src={Img2} alt="라이브" />
-          <p>실시간 수어 연습</p>
+          <p className="service-card-text">실시간 수어 연습 🎥</p>
         </div>
         <div className="service-card">
           <img src={Img3} alt="community" />
-          <p>커뮤니티와 함께 성장</p>
+          <p className="service-card-text">커뮤니티와 함께 성장 🤝</p>
         </div>
         <div className="service-card">
           <img src={Img4} alt="AI" />
-          <p>AI 인식 모델 🤖</p>
+          <p className="service-card-text">AI 인식 모델 🤖</p>
         </div>
       </div>
 
