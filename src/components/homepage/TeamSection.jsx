@@ -20,6 +20,7 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section className="team-section">
+      <hr/>
       <h2>팀원 소개</h2>
       <div className="team-list">
         {teamMembers.map((member, index) => (
