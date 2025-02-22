@@ -4,25 +4,14 @@ import videoLinksConsonants from "../assets/ClassVideoData/ClassConsonants";
 import videoLinksVowels from "../assets/ClassVideoData/ClassVowels";
 import ClassPageContent from "../components/ClassPageContent";
 import { useEffect, useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import instance from '../auth/Axios';
 
 function ClassMainPage() {
   // 백 api 연결 테스트
   const [vidioLinkFromBack, setVidioLinkFromBack] = useState([]);
-  // const getUrl=()=>{
-  //   instance.get('/edu')
-  //     .then(res=>{
-  //       setVidioLinkFromBack(res.data);
-  //       console.log("링크 받아와지나 확인"+res.data);
-  //     })
-  // }
-  // useEffect(()=>{
-  //   console.log("getUrl: ");
-  //   getUrl();
-  // },[]);
-
+  
   useEffect(() => {
     const getUrl = async () => {
       try {
@@ -36,6 +25,7 @@ function ClassMainPage() {
 
     getUrl();
 }, []);
+
 
   // 사이드바 메뉴
   const [selectedCategory, setSelectedCategory] = useState(null);
