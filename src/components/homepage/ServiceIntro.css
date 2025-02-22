@@ -1,12 +1,12 @@
 .service-intro {
   text-align: center;
   position: relative;
-  height: 600px;
-  padding: 40px 0;
+  padding-bottom: 80px;
   font-family: 'IBM-Plex-Sans-KR';
 }
 
 .service-text {
+  padding-top: 80px;
   font-size: 35px;
   color: #3D3D3D;
   margin-bottom: 30px;

@@ -17,9 +17,7 @@ const ServiceIntro = () => {
     <section className="service-intro">
       <hr/>
 
-      <div className="service-text">
-        우리 손이랑 서비스는요
-      </div>
+      <p className="service-text">우리 손이랑 서비스는요</p>
 
       <div className="service-list">
         <div className="service-card">

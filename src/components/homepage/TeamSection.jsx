@@ -21,16 +21,18 @@ const TeamSection = () => {
   return (
     <section className="team-section">
       <hr/>
-      <h2>팀원 소개</h2>
+      <p className="team-title">팀원 소개</p>
+
       <div className="team-list">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
             <img src={member.avatar} alt={member.name} />
-            <p className="name">{member.name}</p>
-            <p className="role">{member.role}</p>
+            <p className="team-name">{member.name}</p>
+            <p className="team-role">{member.role}</p>
           </div>
         ))}
       </div>
+
     </section>
   );
 };
