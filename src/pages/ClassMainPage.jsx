@@ -3,10 +3,30 @@ import VideoGrid from '../components/ClassVideoGrid';
 import videoLinksConsonants from "../assets/ClassVideoData/ClassConsonants";
 import videoLinksVowels from "../assets/ClassVideoData/ClassVowels";
 import ClassPageContent from "../components/ClassPageContent";
-import { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from "axios";
+import instance from '../auth/Axios';
 
 function ClassMainPage() {
+  // 백 api 연결 테스트
+  const [vidioLinkFromBack, setVidioLinkFromBack] = useState([]);
+  
+  useEffect(() => {
+    const getUrl = async () => {
+      try {
+        const response = await instance.get(`/edu?category=CONSONANT`);
+        console.log("데이터 받아와지나 확인", response.data);
+        setVidioLinkFromBack(response.data);
+      } catch (error) {
+        console.error('api 오류 발생:', error);
+      }
+    };
+
+    getUrl();
+}, []);
+
+
   // 사이드바 메뉴
   const [selectedCategory, setSelectedCategory] = useState(null);
   const categories = [

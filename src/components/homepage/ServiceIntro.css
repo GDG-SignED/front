@@ -1,0 +1,57 @@
+.service-intro {
+  text-align: center;
+  position: relative;
+  padding-bottom: 80px;
+  font-family: 'IBM-Plex-Sans-KR';
+}
+
+.service-text {
+  padding-top: 80px;
+  font-size: 35px;
+  color: #3D3D3D;
+  margin-bottom: 30px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  height: 240px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 140px;
+  height: 140px;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.service-card-text {
+  color: #3D3D3D;
+  font-size: 21px;
+  margin-top: 20px;
+}
+
+.service-button {
+  margin-top: 30px;
+  font-family: 'IBM-Plex-Sans-KR';
+  font-size: 22px;
+  height: 70px;
+  width: 200px;
+  background-color: #578E7E;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

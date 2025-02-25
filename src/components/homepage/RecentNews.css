@@ -1,0 +1,40 @@
+.recent-news {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 80px;
+  font-family: 'IBM-Plex-Sans-KR';
+}
+
+.news-top {
+  padding-top: 80px;
+  font-size: 35px;
+  color: #3D3D3D;
+  margin-bottom: 30px;
+}
+
+.news-box {
+  background: #FFFAEC;
+  padding: 30px;
+  border-radius: 8px;
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  text-align: left;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+  font-size: 15px;
+  color: gray;
+}
+
+.news-title {
+  font-size: 25px;
+}
+
+.news-text {
+  font-size: 20px;
+  color: #515050;
+}
