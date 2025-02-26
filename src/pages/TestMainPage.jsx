@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import './css/TestMainPage.css';
 import TestPageContent from '../components/TestPageContent';
+import BasicWordTest from '../components/BasicWordTest';
 
 
 function TestMainPage() {
@@ -43,11 +44,8 @@ function TestMainPage() {
 
         {/* 하단부 */}
         <main className='test-content'>
-          {selectedTestSideMenu ? (
-            selectedTestSideMenu.testAI
-          ) : (
-            <TestPageContent />
-          )}
+        {!selectedTestSideMenu && <TestPageContent />}
+        {selectedTestSideMenu && selectedTestSideMenu.key === "basicWords" && (<BasicWordTest />)}
         </main>
       </div>
     </div>
