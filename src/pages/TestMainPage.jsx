@@ -6,6 +6,9 @@ import BasicWordTest from '../components/BasicWordTest';
 import AlphabetConsonantsTest from '../components/AlphabetConsonantsTest';
 import AlphabetVowelsTest from '../components/AlphabetVowelsTest';
 
+import Login from '../components/LoginComponent';
+import Logout from '../components/LogoutComponent';
+
 function TestMainPage() {
   // 사이드바 메뉴
   const [selectedTestSideMenu, setSelectedTestSideMenu] = useState(null);
@@ -15,21 +18,14 @@ function TestMainPage() {
     { name: "기초 단어", key: "basicWords", testAI: [] },
   ];
 
-  // 로그인 페이지 연결
-  const navigate = useNavigate();
-  function gotoLogin() {
-    navigate('/login-page');
-  }
+  const accessToken = localStorage.getItem("accessToken");
 
   return (
     <div>
       <div className='test-container'>
         {/* 상단부 */}
         <header className='test-header'>
-          <div className='test-left-section'>
-            <h2>로그인 후에 같이 공부해보아요!</h2>
-            <button className='test-login-button' onClick={gotoLogin}>로그인/회원가입 →</button>
-          </div>
+          {accessToken ? <Login /> : <Logout />}
           <div className='test-right-section'>
             {testSideMenu.map((sideMenu) => (
               <button

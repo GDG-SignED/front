@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 
-/* 로그인 후
+로그인 후
 .home-user-info {
   background-color: #FFFAEC;
   padding: 30px;
@@ -58,4 +58,4 @@
 .actions {
   color: gray;
   font-size: 16px;
-} */
+}

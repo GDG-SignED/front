@@ -7,6 +7,8 @@ function Intro(){
   function gotoLogin() {
     navigate('/login-page');
   }
+
+  const accessToken = localStorage.getItem("accessToken");
   
   return(
     <section className="intro-section">
@@ -15,13 +17,18 @@ function Intro(){
         <p className="intro-subtitle">손이랑과 함께 오늘도 수어를 배워보아요</p>
       </div>
 
-      {/* 로그인 후
-      <div className="home-user-info">
-        <p className="username">(닉네임) 님 🌱</p>
-        <p className="actions">마이페이지 | 로그아웃</p>
-      </div> */}
-      
-      <button className="home-login-button" onClick={gotoLogin}>로그인/회원가입 →</button>
+      {accessToken ? (
+        // 로그인 후 화면
+        <div className="home-user-info">
+          <p className="username">반가워요! 🌱</p>
+          <p className="actions">마이페이지 | 로그아웃</p>
+        </div>
+      ) : (
+        // 로그인 전 화면
+        <button className="home-login-button" onClick={gotoLogin}>
+          로그인/회원가입 →
+        </button>
+      )}
     </section>
   )
 }

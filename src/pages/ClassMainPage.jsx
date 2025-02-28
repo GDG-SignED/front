@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import instance from '../auth/Axios';
+import Login from '../components/LoginComponent';
+import Logout from '../components/LogoutComponent';
 
 function ClassMainPage() {
   // 백 api 연결 테스트
@@ -36,21 +38,14 @@ function ClassMainPage() {
     { name: "기초 단어", key: "basicWords", videos: [] },
   ];
 
-  // 로그인 페이지 연결
-  const navigate = useNavigate();
-  function gotoLogin() {
-    navigate('/login-page');
-  }
+  const accessToken = localStorage.getItem("accessToken");
 
   return (
     <div>
       <div className="class-container">
         {/* 상단부 */}
         <header className="class-header">
-          <div className="class-left-section">
-            <h2>로그인 후에 같이 공부해보아요!</h2>
-            <button className="class-login-button" onClick={gotoLogin}>로그인/회원가입 →</button>
-          </div>
+          {accessToken ? <Login /> : <Logout />}
           <div className="class-right-section">
             {categories.map((category) => (
               <button 
