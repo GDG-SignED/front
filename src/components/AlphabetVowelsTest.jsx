@@ -4,7 +4,7 @@ import Webcam from "react-webcam";
 import { Hands } from '@mediapipe/hands';
 import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils';
 
-function BasicWordTest() {
+function AlphabetVowelsTest() {
   // Refs & States
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -21,26 +21,8 @@ function BasicWordTest() {
   const capturedDataRef = useRef([]);
   const isSendingRef = useRef(false);
 
-  const [wordList] = useState(['가족,식구',
-  '건강,기력,튼튼하다',
-  '꿈,포부,꿈꾸다',
-  '낫다,치유',
-  '누나,누님',
-  '다니다',
-  '동생',
-  '병원,의원',
-  '살다,삶,생활',
-  '수술',
-  '실패',
-  '아들',
-  '아빠,부친,아버지',
-  '안녕,안부',
-  '양치질,양치',
-  '어머니,엄마',
-  '자유,마음껏,마음대로,제멋대로',
-  '죽다,사망,숨지다,죽음',
-  '할머니,조모',
-  '형,형님']);
+  const [wordList] = useState(['ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ', 'ㅠ', 'ㅡ', 'ㅣ', 'ㅐ', 'ㅒ', 'ㅔ', 'ㅖ', 'ㅢ', 'ㅚ', 'ㅟ',
+            'ㄸ', 'ㅃ', 'ㅆ', 'ㅉ', 'ㅘ', 'ㅙ', 'ㅞ', 'ㅝ']);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   // MediaPipe 초기화 (웹캠 활성화 시 재설정)
@@ -158,7 +140,7 @@ function BasicWordTest() {
         keypoints: capturedDataRef.current.slice(0, 30)
       };
 
-      const response = await fetch('http://localhost:5050/predict', {
+      const response = await fetch('http://localhost:5051/predict', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
@@ -213,4 +195,4 @@ function BasicWordTest() {
   );
 }
 
-export default BasicWordTest;
+export default AlphabetVowelsTest;
