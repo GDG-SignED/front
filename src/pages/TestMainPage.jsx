@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import './css/TestMainPage.css';
 import TestPageContent from '../components/TestPageContent';
-
+import BasicWordTest from '../components/BasicWordTest';
+import AlphabetConsonantsTest from '../components/AlphabetConsonantsTest';
+import AlphabetVowelsTest from '../components/AlphabetVowelsTest';
 
 function TestMainPage() {
   // 사이드바 메뉴
@@ -43,11 +45,10 @@ function TestMainPage() {
 
         {/* 하단부 */}
         <main className='test-content'>
-          {selectedTestSideMenu ? (
-            selectedTestSideMenu.testAI
-          ) : (
-            <TestPageContent />
-          )}
+        {!selectedTestSideMenu && <TestPageContent />}
+        {selectedTestSideMenu && selectedTestSideMenu.key === "basicWords" && (<BasicWordTest />)}
+        {selectedTestSideMenu && selectedTestSideMenu.key === "consonants" && (<AlphabetConsonantsTest />)}
+        {selectedTestSideMenu && selectedTestSideMenu.key === "vowels" && (<AlphabetVowelsTest />)}
         </main>
       </div>
     </div>

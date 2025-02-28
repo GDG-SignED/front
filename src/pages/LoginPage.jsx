@@ -24,8 +24,8 @@ const LoginPage = () => {
           <img src={naverImg} alt="Naver" className="btn-icon" />
           네이버 로그인
         </button>
-        <button className="login-btn google">
-          <img src={googleImg} alt="Google" className="btn-icon" onClick={handleLogin}/>
+        <button className="login-btn google" onClick={handleLogin}>
+          <img src={googleImg} alt="Google" className="btn-icon" />
           Google 로그인
         </button>
       </div>
